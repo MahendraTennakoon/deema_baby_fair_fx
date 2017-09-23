@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="deema_baby_fair_fx.jnlp">
+  <information>
+    <title>deema_baby_fair_fx</title>
+    <vendor>VTENNM1</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="deema_baby_fair_fx.jar" size="485800" download="eager" />
+    <jar href="lib\commons-digester-2.1.jar" size="196768" download="eager" />
+    <jar href="lib\jasperreports-4.0.0.jar" size="3041636" download="eager" />
+    <jar href="lib\jasperreports-javaflow.jar" size="3081533" download="eager" />
+    <jar href="lib\javax.mail-1.4.4.jar" size="495041" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\org.apache.commons.collections.jar" size="571259" download="eager" />
+    <jar href="lib\org.apache.commons.logging-1.1.1.jar" size="61464" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="deema_baby_fair_fx" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="controllers.Main"  name="deema_baby_fair_fx" />
+  <update check="always"/>
+</jnlp>

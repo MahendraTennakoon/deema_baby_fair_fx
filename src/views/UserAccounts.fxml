@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.UserAccountsController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #3b5998;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="14.0" layoutY="44.0" text="User Accounts" textFill="WHITE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="18.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+               </children>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="table_user_accounts" layoutX="14.0" layoutY="55.0" prefHeight="526.0" prefWidth="268.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="318.0" AnchorPane.topAnchor="55.0">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <ToolBar layoutY="140.0" prefHeight="40.0" prefWidth="582.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <items>
+                        <Button mnemonicParsing="false" onAction="#gotoUserAccountCreation" text="Create new" />
+                     </items>
+                  </ToolBar>
+                  <Label layoutX="5.0" layoutY="20.0" text="Filter:" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="20.0" />
+                  <TextField fx:id="txt_user_filter" layoutX="43.0" layoutY="16.0" promptText="user name" AnchorPane.topAnchor="16.0" />
+                  <TitledPane animated="false" collapsible="false" layoutX="-95.0" layoutY="55.0" text="Access Privileges" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="55.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="278.0" style="-fx-background-color: lightyellow;">
+                           <children>
+                              <VBox layoutX="32.6" layoutY="33.6" prefHeight="334.0" prefWidth="231.0" spacing="12.0" AnchorPane.bottomAnchor="142.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="24.0">
+                                 <children>
+                                    <CheckBox fx:id="chb_business_overview" mnemonicParsing="false" text="Business Overview" />
+                                    <CheckBox fx:id="chb_human_resources" mnemonicParsing="false" text="Human Resources" />
+                                    <CheckBox fx:id="chb_sales" mnemonicParsing="false" text="Sales" />
+                                    <CheckBox fx:id="chb_inventory" mnemonicParsing="false" text="Inventory" />
+                                    <CheckBox fx:id="chb_supplier" mnemonicParsing="false" text="Suppliers" />
+                                    <CheckBox fx:id="chb_finance" mnemonicParsing="false" text="Finance" />
+                                    <CheckBox fx:id="chb_customers" mnemonicParsing="false" text="Customers" />
+                                    <CheckBox fx:id="chb_deliveries" mnemonicParsing="false" text="Deliveries" />
+                                    <CheckBox fx:id="chb_advertising" mnemonicParsing="false" text="Advertising" />
+                                    <CheckBox fx:id="chb_infrastructure" mnemonicParsing="false" text="Infrastructure" />
+                                    <CheckBox fx:id="chb_user_accounts" mnemonicParsing="false" text="User Accounts" />
+                                 </children>
+                              </VBox>
+                              <Button fx:id="btn_save_privileges" layoutX="33.0" layoutY="371.0" mnemonicParsing="false" onAction="#saveAccountPrivileges" prefWidth="70.0" text=" Save">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </TitledPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

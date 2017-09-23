@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="4">
+        <file>
+            <url>src/views/HumanResourcesController.java</url>
+            <bookmark id="2">
+                <name/>
+                <line>0</line>
+                <key/>
+            </bookmark>
+            <bookmark id="3">
+                <name/>
+                <line>296</line>
+                <key/>
+            </bookmark>
+            <bookmark id="4">
+                <name/>
+                <line>333</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/views/EmployeeRegistrationController.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>187</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/VTENNM1/Documents/NetBeansProjects/deema_baby_fair_fx/src/controllers/Main.java</file>
+            <file>file:/C:/Users/VTENNM1/Documents/NetBeansProjects/deema_baby_fair_fx/src/views/LoginController.java</file>
+            <file>file:/C:/Users/VTENNM1/Documents/NetBeansProjects/deema_baby_fair_fx/src/views/EmployeeRegistrationController.java</file>
+            <file>file:/C:/Users/VTENNM1/Documents/NetBeansProjects/deema_baby_fair_fx/src/util/JasperUtil.java</file>
+            <file>file:/C:/Users/VTENNM1/Documents/NetBeansProjects/deema_baby_fair_fx/src/views/HomeController.java</file>
+        </group>
+    </open-files>
+</project-private>
